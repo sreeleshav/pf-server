@@ -1,0 +1,72 @@
+-what is db-collection od orginzed data
+-what is dbms-the datas whrere managing system known as dbms
+-what is rdbms-The dbms hav relationship thats thats type known as rdbms
+-what is sql-based dbms-
+-what is schema-a structure 
+-what is keys,fields,rows,entities-
+-what is primary keys
+-what is entitty-relationship
+
+
+
+MONGODB:
+--------
+
+-mongo db:it s a no-sql non-relational dbms
+
+-features of Mongodb:
+-no sql
+-no entitty relationship
+-every entities  store in mongodb will be independent of ech other
+-indexing
+-data stoed in json-document format
+-data stored as BISON(binary-json) data
+-rich-query language
+-
+
+differnee b/w mongodb & mysql:
+
+MYSQL                  MongoDB
+
+-DATABASE               -DATABASE
+-TABLE                  -COLLECTION
+-ROW/tuple/entitty      -DOCUMENT
+-COLUMN/keys/            -Fields
+  attrubute/fields
+-primary Key             -ObjectID
+
+
+=>Queries:
+
+-to create a new db/to choose an existing db = use <db-name>
+-to list collection  = show collection
+-
+
+
+=>JWT(JSON web Token)
+------------------------
+-authentication meachanism used for secure implementation of user verification
+-creates a random charcter set called (Token/signature)
+while user logging into the sysytem,and verifies when further requests are made by user after authentication
+-jsonwebtoken is a third party pacakage used with node.js for jwt authentication
+-sign() method for token generation,and verify() method for token verification
+-npm i jsonwebtoken
+
+
+
+Middlewres
+------------
+
+-special function that can access and act b/w client and server before the implementation
+
+const middlewre=(req,res,next)=>{
+  next()
+}
+
+-Application level middlewares
+->middlewares that implemented into an entire server
+ex:cors(),json()
+
+-Router level middleware
+->middleware implmented into an a specific route only 
+-addproject
